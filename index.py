@@ -8,6 +8,9 @@ app = Flask(__name__)
 # @app.route('/user/<int:name>')
 # def hello(name):
 #     return f"hello {name}"
+@app.route('/')
+def hello():
+    return f"hello "
 
 
 @app.route('/signup', methods=['POST'])
